@@ -1,0 +1,120 @@
+// Variables
+$font: "Manrope", sans-serif;
+$font-med: "500";
+$font-bold: "700";
+$font-size: 13px;
+$clr-dark-blue: hsl(217, 19%, 35%);
+$clr-desaturated-dark: hsl(214, 17%, 51%);
+$clr-gray-blue: hsl(212, 23%, 69%);
+$clr-light-gray: hsl(210, 46%, 95%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// html {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: $clr-light-gray;
+  font-family: $font;
+}
+
+h1 {
+  font-weight: $font-bold;
+  font-size: 2.5rem;
+  color: $clr-dark-blue;
+  margin-bottom: 1rem;
+}
+p {
+  font-weight: $font-med;
+  font-size: 1.5rem;
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article {
+  // border: 1px solid blue;
+  border-radius: 15px;
+  background: white;
+  color: $clr-desaturated-dark;
+  width: 65%;
+  height: 45%;
+  display: grid;
+  grid-template-columns: 600px 1fr;
+  grid-template-rows: 100%;
+}
+
+.article__box-img {
+  // border: 1px solid green;
+  width: 600px;
+  height: 100%;
+  background-image: url("/images/drawers.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+  // img {
+  // width: 100%;
+  // height: auto;
+  // float: left;
+  // object-fit: cover;
+  // background-repeat: no-repeat;
+  // background-position: 70% 50%;
+  // border-top-left-radius: 15px;
+  // border-bottom-left-radius: 15px;
+  // }
+}
+
+.heading {
+  padding: 4em;
+  p {
+    margin-bottom: 1em;
+    line-height: 1.5;
+    letter-spacing: 2;
+  }
+}
+.author {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  .author__avatar {
+    background-image: url("/images/avatar-michelle.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+  }
+  .author__details {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    margin-left: 1.5em;
+    h4 {
+      font-size: 1.5rem;
+      color: $clr-dark-blue;
+    }
+    p {
+      color: $clr-gray-blue;
+    }
+  }
+}

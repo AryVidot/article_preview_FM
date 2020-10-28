@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ecf2f8;
+  font-family: "Manrope", sans-serif;
+}
+
+h1 {
+  font-weight: "700";
+  font-size: 2.5rem;
+  color: #48556a;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-weight: "500";
+  font-size: 1.5rem;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article {
+  border-radius: 15px;
+  background: white;
+  color: #6d7f97;
+  width: 65%;
+  height: 45%;
+  display: grid;
+  grid-template-columns: 600px 1fr;
+  grid-template-rows: 100%;
+}
+
+.article__box-img {
+  width: 600px;
+  height: 100%;
+  background-image: url("/images/drawers.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.heading {
+  padding: 4em;
+}
+.heading p {
+  margin-bottom: 1em;
+  line-height: 1.5;
+  letter-spacing: 2;
+}
+
+.author {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.author .author__avatar {
+  background-image: url("/images/avatar-michelle.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+.author .author__details {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+  margin-left: 1.5em;
+}
+.author .author__details h4 {
+  font-size: 1.5rem;
+  color: #48556a;
+}
+.author .author__details p {
+  color: #9eafc2;
+}
+
+/*# sourceMappingURL=style.css.map */
